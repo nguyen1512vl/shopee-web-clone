@@ -1,0 +1,227 @@
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+    .hide-on-moblie-tablet {
+        display: none;
+    }
+
+    .header-with-search__logo-icon {
+        width: 110px;
+        height: 40px;
+    }
+
+    .header-with-search__logo {
+        padding-right: 10px;
+    }
+
+    .header-with-search__cart-section {
+        padding-bottom: 0;
+    }
+
+    .header-with-search__cart-wrapper {
+        margin-top: 0;
+        display: flex;
+    }
+
+    .header-with-search__cart-box {
+        height: 30px;
+    }
+
+    .header-with-search__cart-list {
+        position: fixed;
+        top: 85px;
+        left: 0;
+        width: 100vw;
+        padding: 0 calc((100vw - 644px) / 2);
+    }
+
+    .header-with-search__cart-list::before {
+        display: none;
+    }
+
+    .header-with-search__cart-list::after {
+        display: none;
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        z-index: 10;
+    }
+
+    .app__container {
+        margin-top: calc(85px + 46px);
+    }
+
+    .header__sort-bar {
+        display: flex;
+    }
+
+    .header__mobile-category {
+        display: block;
+    }
+
+    .header__mobile-category-modal--show {
+        display: block;
+    }
+
+    @keyframes modalCategoryFadein {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes mobileCategorySlidein {
+        from {
+            left: -300px;
+        }
+        to {
+            left: 0;
+        }
+    }
+
+    .footer__right-and-region {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .footer__copyright {
+        margin: 0 0 15px 0;
+    }
+
+    .footer__policy {
+        width: 100%;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tablet {
+        display: none;
+    }
+
+    .header__mobile-category {
+        margin-right: 10px;
+        padding: 10px;
+    }
+
+    .product__item {
+        margin-bottom: 16px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .header-with-search {
+        justify-content: space-between;
+    }
+
+    .header-with-search__cart-section {
+        flex: none;
+    }
+
+    .header-with-search__logo {
+        padding: 0;
+    }
+
+    .header-with-search__search-section {
+        position: absolute;
+        top: 85px;
+        left: 0;
+        width: 100vw;
+        height: 46px;
+        display: none;
+        align-items: center;
+        z-index: 1;
+    }
+
+    .header__mobile-search {
+        display: block;
+    }
+
+    .search-bar {
+        padding: 0 5px;
+    }
+
+    .header__mobile-checkbox:checked ~  .header-with-search__search-section{
+        display: flex;
+    }
+
+    .search-bar__history {
+        box-shadow: 0 4px 2px -2px rgba(0, 0, 0, .05);
+        top: 43px;
+        left: -5px;
+        width: calc(100% + 70px);
+    }
+
+    .header__mobile-category-list {
+        width: 100%;
+    }
+
+    .product__item {
+        margin-bottom: 8px;
+    }
+    
+    .pagination__item {
+        margin: 0;
+        font-size: 14px;
+        width: 35px;
+    }
+
+    .footer__col {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .footer__content-item {
+        justify-content: center;
+    }
+
+    .footer__region-heading {
+        flex: unset;
+    }
+
+    .products-section {
+        padding: 0 10px;
+    }
+
+    .mobile-p-10 {
+        padding: 0 10px;
+    }
+
+    .footer__region-heading,
+    .footer__region-nation-link {
+        white-space: nowrap;
+    }
+}
+
+/* Ipad pro */
+@media (min-width: 1024px) and (max-width: 1024px) {
+    .hide-on-ipad-pro {
+        display: none!important;
+    }
+
+    .ipad-pro-12 {
+        flex: 0 0 100%!important;
+        max-width: 100%!important;
+    }
+}
+
+/* Mobile without small tablet */
+@media (max-width: 599px) {
+    .footer__payment-list,
+    .footer__transportation-list {
+        justify-content: center;
+    }
+}
